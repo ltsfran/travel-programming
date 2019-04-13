@@ -1,0 +1,23 @@
+{
+  "name": "TravelProgramming",
+  "version": "1.0.0",
+  "description": "Desarrollo de una aplicación web orientada al rubro de Salud.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TSFran/TravelProgramming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TSFran/TravelProgramming/issues"
+  },
+  "homepage": "https://github.com/TSFran/TravelProgramming#readme",
+  "dependencies": {
+    "react": "^16.8.6"
+  }
+}
