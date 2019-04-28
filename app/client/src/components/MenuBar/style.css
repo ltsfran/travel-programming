@@ -1,0 +1,33 @@
+.c-menuBar {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.c-menuBar__item {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.c-menuBar__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 11px;
+  color: black;
+  text-decoration: none;
+}
+
+.c-menuBar__link:hover {
+  background-color: #399D7C;
+  color: white;
+}
+
+.c-menuBar__link svg {
+  display: block;
+  width: 100%;
+  color: white;
+  margin-bottom: 18px;
+  stroke-width:4px
+}
