@@ -1,33 +1,33 @@
 import * as React from 'react';
 import { renderRoutes } from 'react-router-config';
-import { MenuBar } from './../components/MenuBar';
+import { Header } from './../components/Header';
+
+import './style.css'
 
 const items = [
   {
-    label: "Text"
+    label: 'Home',
+    icon: 'plus'
   },
   {
-    label: "Text"
+    label: 'Medicinas',
+    icon: 'plus'
   },
   {
-    label: "Text"
+    label: 'Enfermedades',
+    icon: 'plus'
   },
   {
-    label: "Text"
-  },
-  {
-    label: "Text"
-  },
-  {
-    label: "Text"
-  },
+    label: 'Nosotros',
+    icon: 'plus'
+  }
 ]
 
 export function App({route}) {
   return (
-    <>
-      <MenuBar items={items}/>
+    <div className="p-content">
+      <Header items={items}/>
       {renderRoutes(route.routes)}
-    </>
+    </div>
   );
 }

@@ -1,0 +1,143 @@
+.c-header__wrapper {
+  width: 100%;
+}
+
+.c-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #389E85;
+}
+
+.c-header__toogle {
+  position: absolute;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #c6c6c6;
+}
+
+.c-header__logo {
+  width: 200px;
+  height: 80%;
+  background-color: #c6c6c6;
+}
+
+.c-header__menu {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  transform: translateX(-200px);
+  transition: .2s linear;
+}
+
+.c-header__menu--open {
+  transform: translateX(0px); 
+}
+
+.c-nav {
+  width: 100%;
+  height: 100%;
+  background-color: #389E85;
+}
+
+.c-nav__item {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  border-bottom: 1px solid white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.c-nav__item-link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding: 18px 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+.c-nav__item-link svg {
+  stroke-width: 4px;
+}
+
+.c-header__overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 5%;
+  }
+
+  .c-header {
+    width: auto;
+    background-color: white;
+  }
+
+  .c-header__toogle {
+    display: none;
+  }
+
+  .c-header__menu {
+    width: auto;
+    position: relative;
+    transform: translateX(0px);
+  }
+
+  .c-nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: white;
+  }
+
+  .c-nav__item {
+    border: none;
+  }
+
+  .c-nav__item-link {
+    justify-content: center;
+    color: black;
+  }
+
+  .c-nav__item-link:hover {
+    color: white;
+  }
+
+  .c-nav__item-link svg {
+    display: block;
+    width: 100%;
+  }
+
+  .c-nav__item:hover {
+    background-color: #389E85;
+  }
+
+  .c-header__overlay {
+    display: none;
+  }
+}
