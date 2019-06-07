@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 import { Icon } from '../Icon';
 
 export function Header({ items }) {
@@ -27,10 +28,10 @@ export function Header({ items }) {
             <ul className="c-nav">
               { items.map((item, key) => (
                 <li key={key} className="c-nav__item">
-                  <a className="c-nav__item-link" href="#">
+                  <Link className="c-nav__item-link" to={item.link}>
                     { item.icon && <Icon name={item.icon} /> }
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -40,10 +41,10 @@ export function Header({ items }) {
             <ul className="c-nav">
               { items.map((item, key) => (
                 <li key={key} className="c-nav__item">
-                  <a className="c-nav__item-link" href="#">
+                  <Link className="c-nav__item-link" to={item.link}>
                     { item.icon && <Icon name={item.icon} /> }
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
