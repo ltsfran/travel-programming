@@ -7,19 +7,23 @@ import './style.css'
 const items = [
   {
     label: 'Home',
-    icon: 'plus'
+    icon: 'plus',
+    link: '/'
   },
   {
     label: 'Medicinas',
-    icon: 'plus'
+    icon: 'plus',
+    link: '/medicinas'
   },
   {
     label: 'Enfermedades',
-    icon: 'plus'
+    icon: 'plus',
+    link: '/enfermedades'
   },
   {
     label: 'Nosotros',
-    icon: 'plus'
+    icon: 'plus',
+    link: '/nosotros'
   }
 ]
 
