@@ -1,0 +1,9 @@
+.c-title{
+    display: flex;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.c-title-h1{
+    color: #389E85; 
+    text-align: center;
+}
