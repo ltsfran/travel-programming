@@ -1,9 +1,10 @@
 .c-title{
     display: flex;
-    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
-}
-.c-title-h1{
     color: #389E85; 
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
 }

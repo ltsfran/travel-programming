@@ -1,0 +1,1 @@
+export { SearchMedicinesContainer } from './SearchMedicinesContainer';

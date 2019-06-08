@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { Title } from './description/components/Title';
 import { DescriptionFeature } from './description';
 
 export function Medicines() {
