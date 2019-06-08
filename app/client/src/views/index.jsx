@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { renderRoutes } from 'react-router-config';
 import { Header } from './../components/Header';
-
+import { Title } from '../components/Title/Title';
+import { Input } from '../components/Input';
+import { SearchMedicines } from '../components/SearchMedicines';
 import './style.css'
+
 
 const items = [
   {
@@ -31,6 +34,9 @@ export function App({route}) {
   return (
     <div className="p-content">
       <Header items={items}/>
+      <Title/>
+      <Input/>
+      <SearchMedicines/>
       {renderRoutes(route.routes)}
     </div>
   );
