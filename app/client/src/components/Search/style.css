@@ -1,0 +1,31 @@
+.button{
+    width:100%;
+    border:2px solid green;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    }
+  .button:focus{
+    border-color:green;
+    box-shadow:0 0 8px 0 green;
+  }
+  
+  .ButtonIcon input[type=Buscar]{
+    padding-left:30px;
+  }
+  .ButtonIcon{
+    position:relative;
+  }
+  .ButtonIcon svg{
+    position:absolute;
+    left:0;
+    top:12px;    
+    color:green;
+  }
+  .ButtonIcon input[type=Buscar] +svg{
+    color:green;
+  }
+  
