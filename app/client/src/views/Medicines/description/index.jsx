@@ -3,6 +3,7 @@ import { TitleContainer } from './components/Title';
 import { TextContainer } from './components/Text';
 import { SearchMedicinesContainer } from './components/SearchMedicines';
 import { ImageContainer } from './components/Image';
+import { Search } from '../../../components/Search'
 
 export function DescriptionFeature() {
   return(
@@ -11,6 +12,7 @@ export function DescriptionFeature() {
       <TitleContainer />
       <ImageContainer />
       <TextContainer />
+      <Search></Search>
     </>
   );
 }
