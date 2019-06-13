@@ -1,9 +1,10 @@
 import * as React from 'react';
+import { DescriptionFeature } from './description';
 
 export function Diseases() {
   return (
-    <>
-      <div>Estás en las enfermedades</div>
-    </>
+    <div className="s-content">
+      <DescriptionFeature />
+    </div>
   );
 }

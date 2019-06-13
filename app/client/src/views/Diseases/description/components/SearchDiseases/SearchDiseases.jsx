@@ -4,7 +4,7 @@ import { Image } from '@app/src/components/Image';
 import { Title } from '@app/src/components/Title';
 import './style.css';
 
-export function SearchMedicines({
+export function SearchDiseases({
   handleChange,
   items
 }) {
@@ -28,11 +28,11 @@ export function SearchMedicines({
   }
 
   return(
-    <div className="s-search-medicines">
+    <div className="s-search-diseases">
       <div className="c-search">
         <Input
           icon="search"
-          placeholder="Busque sus medicamentos..."
+          placeholder="Busque su enfermedad..."
           width="100%"
           onChange={onChange}
         />
@@ -63,14 +63,14 @@ export function SearchMedicines({
           </>
         ) : (
           <>
-            <Title text="MEDICINA BUSCADA POR EL USUARIO"/>
+            <Title text="ENFERMEDAD BUSCADA POR EL USUARIO"/>
             <div className="s-description__images">
-              <Image src="https://www.movilzona.es/app/uploads/2015/05/medicinas.jpg?x=810" width="250px" height="250px"/>
-              <Image src="https://www.america-retail.com/static//2018/08/medicinas-medicacion.jpg" width="250px" height="250px"/>
-              <Image src="https://i1.wp.com/www.sopitas.com/wp-content/uploads/2019/03/empresas-medicamentos-epn.jpg" width="250px" height="250px"/>
-              <Image src="https://images.sipse.com/dXXLI1e2svKjHrrRAHeFr_ZaNGA=/800x497/smart/2018/01/04/1515099079800.jpg" width="250px" height="250px"/>
-              <Image src="https://cdne.diariocorreo.pe/thumbs/uploads/articles/images/prohiben-venta-de-medicinas-en-tiendas-119281-jpg_604x0.jpg" width="250px" height="250px"/>
-              <Image src="https://www.frenteamplio.org/wp-content/uploads/MEDICINAS-1024x683.jpg" width="250px" height="250px"/>
+              <Image src="https://st4.depositphotos.com/13264288/22120/v/1600/depositphotos_221204632-stock-illustration-funny-cartoon-guy-wearing-medical.jpg" width="250px" height="250px"/>
+              <Image src="http://1.bp.blogspot.com/-cOySAqDNaYA/VNA07K_Eu9I/AAAAAAAAMFA/fzlenSyMPf8/w1200-h630-p-k-no-nu/DOLENCIAS%2BENFERMEDADES%2BEN%2BINGL%C3%89S%2BAILMENTS%2BDIBUJOS%2BFIEBRE%2BCONSTIPADO%2BSTOMACHACHE%2BDOLOR%2BDE%2BCABEZA%2BAILMENTS%2BINGL%C3%89S%2BAPRENDER%2BINGL%C3%89S%2BDRAWINGS%2BILNESSES%2BAILMENTS.jpg" width="250px" height="250px"/>
+              <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2byuS-tQBwUagGbLT0o9_B_coObfKhYCSvOKZe31bZl-UzaFj" width="250px" height="250px"/>
+              <Image src="http://www.dibujalia.com/data/media/41/tos-enfermedad.png" width="250px" height="250px"/>
+              <Image src="https://png.pngtree.com/element_origin_min_pic/17/01/05/633b3410d85b1a8f08406055de94ecd2.jpg" width="250px" height="250px"/>
+              <Image src="https://png.pngtree.com/element_origin_min_pic/17/09/19/d83c0de64603cb742f15932882881ff3.jpg" width="250px" height="250px"/>
             </div>
           </>
         )}

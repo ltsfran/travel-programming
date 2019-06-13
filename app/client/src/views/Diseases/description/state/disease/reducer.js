@@ -11,14 +11,14 @@ const initialState = {
   isFetching: false
 }
 
-export function medicine(state=initialState, action) {
+export function disease(state=initialState, action) {
   switch(action.type) {
-    case actionTypes.FETCH_MEDICINES_REQUEST:
+    case actionTypes.FETCH_DISEASES_REQUEST:
       return {
         ...state,
         isFetching: true
       };
-    case actionTypes.FETCH_MEDICINES_FAILURE:
+    case actionTypes.FETCH_DISEASES_FAILURE:
       return {
         ...state,
         isFetching: false,
@@ -31,7 +31,7 @@ export function medicine(state=initialState, action) {
           }]
         }
       };
-    case actionTypes.FETCH_MEDICINES_SUCCESS:
+    case actionTypes.FETCH_DISEASES_SUCCESS:
       return {
         ...state,
         isFetching: false,

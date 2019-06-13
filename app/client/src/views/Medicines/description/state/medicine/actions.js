@@ -1,5 +1,6 @@
 import * as actionTypes from './actionTypes';
 import { serviceMedicine } from './services';
+import { STATUS_CODE } from './constants';
 
 export function fetchMedicineRequest() {
   return {
@@ -21,13 +22,17 @@ export function fetchMedicineSuccess(data) {
   }
 }
 
-export function fetchMedicine() {
+export function fetchMedicine(params) {
   return async function(dispatch) {
-    dispatch(fetchMedicineRequest());
-
+    !!params && dispatch(fetchMedicineRequest());
     try {
-      const data = await serviceMedicine.getData();
-      dispatch(fetchMedicineSuccess(data));
+      const data = !!params && await serviceMedicine.getData(params.toUpperCase());
+      if(data.code === STATUS_CODE.OK) {
+        dispatch(fetchMedicineSuccess(data));
+      }
+      if(data.code === STATUS_CODE.ERROR) {
+        dispatch(fetchMedicineFailure(data));
+      }
     } catch(e) {
       dispatch(fetchMedicineFailure(e.errorMessage));
     }

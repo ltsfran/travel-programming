@@ -27,7 +27,7 @@ export function Header({ items }) {
           <div className="c-header__menu c-header__menu--open">
             <ul className="c-nav">
               { items.map((item, key) => (
-                <li key={key} className="c-nav__item">
+                <li key={key} className="c-nav__item" onClick={() => setOpen(false)}>
                   <Link className="c-nav__item-link" to={item.link}>
                     { item.icon && <Icon name={item.icon} /> }
                     {item.label}

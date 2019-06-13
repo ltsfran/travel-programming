@@ -1,0 +1,1 @@
+export { disease } from './reducer';
