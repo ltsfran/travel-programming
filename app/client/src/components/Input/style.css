@@ -1,0 +1,36 @@
+.c-input-wrapper{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.c-input-wrapper svg {
+  position: absolute;
+  left: 8px;
+  color: #B6B6B6;
+}
+
+.c-input{
+  width: 100%;
+  border: 2px solid #B6B6B6;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: .3s;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.c-input:focus{
+  border: 2px solid #389E85;
+}
+
+.c-input:focus + svg{
+  color: black;
+  transition: .3s;
+}
+
+.c-input--svg {
+  padding-left: 35px;
+}

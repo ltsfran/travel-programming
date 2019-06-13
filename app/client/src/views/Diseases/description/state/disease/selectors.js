@@ -1,3 +1,3 @@
 export function getItems(state) {
-  return state.medicine.data.data;
+  return state.disease.data.data;
 };
