@@ -4,10 +4,7 @@ const initialState = {
   data: {
     code: null,
     message: '',
-    data: {
-      title: '',
-      description: ''
-    }
+    data: [{}]
   },
   isFetching: false
 }
@@ -31,7 +28,7 @@ export function medicine(state=initialState, action) {
         isFetching: false,
         data: action.data
       }
-    default: 
+    default:
       return state;
   }
 }
