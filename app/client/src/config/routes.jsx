@@ -20,7 +20,7 @@ export const Routes = [
     routes: [
       {
         path: `${pathBase}/`,
-        component: Home,
+        component: Medicines,
         exact: true,
       },
       {
@@ -33,11 +33,11 @@ export const Routes = [
         component: Diseases,
         exact: true
       },
-      {
-        path: `${pathBase}/nosotros`,
-        component: Us,
-        exact: true
-      },
+      // {
+      //   path: `${pathBase}/nosotros`,
+      //   component: Us,
+      //   exact: true
+      // },
       {
         path: '*',
         component: NotFound
