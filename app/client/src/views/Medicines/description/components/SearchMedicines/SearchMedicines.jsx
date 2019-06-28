@@ -6,7 +6,8 @@ import './style.css';
 
 export function SearchMedicines({
   handleChange,
-  items
+  items,
+  error
 }) {
   const [ show, setShow ] = React.useState(false);
   const [ index, setIndex ] = React.useState(null);
@@ -39,7 +40,7 @@ export function SearchMedicines({
         {
           show && (
           <div className="c-search__results">
-            { items.map((data, key) => (
+            { !error && items.map((data, key) => (
               <div
                 key={key}
                 className="c-search__results-item"

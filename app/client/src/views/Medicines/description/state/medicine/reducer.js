@@ -8,7 +8,8 @@ const initialState = {
       title: ''
     }]
   },
-  isFetching: false
+  isFetching: false,
+  error: false
 }
 
 export function medicine(state=initialState, action) {
@@ -16,13 +17,15 @@ export function medicine(state=initialState, action) {
     case actionTypes.FETCH_MEDICINES_REQUEST:
       return {
         ...state,
-        isFetching: true
+        isFetching: true,
+        error: false
       };
     case actionTypes.FETCH_MEDICINES_FAILURE:
       return {
         ...state,
         isFetching: false,
         errorMessage: action.errorMessage,
+        error: true,
         data: {
           code: 205,
           message: 'Failed message',
@@ -35,6 +38,7 @@ export function medicine(state=initialState, action) {
       return {
         ...state,
         isFetching: false,
+        error: false,
         data: action.data
       }
     default:

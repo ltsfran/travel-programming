@@ -5,7 +5,8 @@ import * as selectDisease from '@app/src/views/Diseases/description/state/diseas
 
 function mapStateToProps(state) {
   return {
-    items: selectDisease.getItems(state)
+    items: selectDisease.getItems(state),
+    error: selectDisease.getError(state)
   }
 };
 

@@ -6,7 +6,7 @@ import './style.css'
 
 const items = [
   {
-    label: 'Home',
+    label: 'Inicio',
     icon: 'plus',
     link: '/'
   },
